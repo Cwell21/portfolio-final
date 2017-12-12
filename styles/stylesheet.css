@@ -1,0 +1,160 @@
+/*CSS style sheet for week 5 homework: Passed validator 11/14/17*/
+/*
+font-family: 'Handlee', cursive;
+font-family: 'Marck Script', cursive;
+*/
+/*Create base font for website*/
+html {
+  font-size: 16px;
+  font-family: Georgia, helvetica;
+}
+body {
+  background-color: rgb(0,0,0);
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+}
+.main-wrapper {
+  background-image: url("../images/background/bcground.jpg");
+  width: 70%;
+  min-height: 800px;
+  margin: 0 15% 0 15%;
+}
+.heading {
+  padding: 3%;
+  font-size: 3rem;
+  color: rgb(255,255,255);
+  font-weight: 300;
+}
+em {
+  font-family: 'Handlee', cursive;
+  color: purple;
+  font-weight: 900;
+}
+
+.top-nav {
+  background-color: rgba(172,181,200,.50);
+  width: 100%;
+  height: 48px;
+  text-align: center; 
+}
+.top-nav a:link {
+  font-size: 120%;
+  text-decoration: none;
+}
+.top-nav a:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+.top-nav li{
+  display: inline;
+  position: relative;
+  top: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.middle-wrapper {
+  position: relative;
+  margin-top: 2%; 
+  overflow: hidden; 
+}
+.side-nav li {
+  margin-bottom: 1rem;
+}
+h4 {
+  color: rgb(255,255,255);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.row1-col1{
+  background-color: rgba(172,181,200,.50);
+  color: rgb(0,0,0);
+  max-width: 15%;
+  min-width: 15%;
+  max-height: 500px;
+  min-height: 500px;
+  position: relative;
+  float: left;
+  margin-left: 2.75%;
+}
+.row1-col-c{
+  background-color: rgba(172,181,200,.50);
+  float: left;
+  color: rgb(0,0,0);
+  max-width: 60%;
+  min-width: 60%;
+  max-height: 500px;
+  min-height: 500px;
+  position: relative;
+  margin-left: 2.75%;
+}
+.row1-col1 p{
+  font-family: 'Marck Script', cursive;
+  margin: 1% 5%;
+}
+#center-header {
+  font-size: 2rem;
+}
+figcaption {
+  margin-top: 2%;
+}
+
+footer {
+  clear: both;
+  background-color: rgba(172,181,200, .5);
+  color: rgb(0,0,0);
+  max-width: 95%;
+  min-width: 30%;
+  max-height: 88px;
+  min-height: 88px;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+#B {
+  color: rgb(255,255,255);
+  font-weight: 800;
+}
+.f-content-left {
+  float: left;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+.f-content-center {
+  float: left;
+  margin-top: 1.25rem;
+  margin-left: 22%
+}
+.f-content-right {
+  float: right;
+  margin-top: 1.5%;
+  margin-right: 2%;
+  padding-left: 1%;
+  align-content: flex-end;
+  
+}
+.f-icon li{
+  display: inline;
+  width: auto;
+  height: auto;
+}
+.f-image{
+  width: 2rem;
+  height: 2rem;
+}
+footer h5 {
+  text-decoration: underline;
+  margin-bottom: .75rem;
+}
+
+
+
+
+
+
+
+
+
+
+

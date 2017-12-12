@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--Note: Home work for week 5.  Passed validator 11/14/17.
+<i class="fa fa-stethoscope"></i> fa-stethoscope is element to use
+Note to Jeremie and Kat, font awesome items used on pages movies.html and books.html.  Google fonts linked to all pages-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mockup Assignment</title>
+  <!--links to stylesheets, google fonts, and font awesome script.  Note fontawesome not used on index.html, used on movies.html and books.html.-->
+  <script src="https://use.fontawesome.com/c6ec3aecbd.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+ 
+  <!--java script to handle mouseover and mouseout at side navigation.  Note: look into ways to clean up code-->
+  <script>
+    function mOverPZ(x) {
+      x.src = "images/pizza-icon-2.png";
+    }
+    
+    function mOutPZ(x) {
+      x.src = "images/pizza-icon.png";
+    }
+     function mOverSF(x) {
+      x.src = "images/stir-fry-icon-2.png";
+    }
+    
+    function mOutSF(x) {
+      x.src = "images/stir-fry-icon.png";
+    }
+    function mOutBG(x) {
+      x.src = "images/burger-icon.png";
+    }
+     function mOverBG(x) {
+      x.src = "images/burger-icon-2.png";
+    }
+  </script>
+</head>
+
+<body>
+<!--  Content wrapper. wraps all code in body-->
+  <!--NOTE:  Won't pass validator if I use section/article in lieu of div tag.  Validator says heading required with section.  That is why I am using div's instead of section -->
+  <div class="main-wrapper">
+    <h1 class="heading">Some of my <em>favorite</em> things!</h1>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html">Food</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="#">T.B.D.</a></li>
+        <li><a href="#">T.B.D.</a></li>
+        <li><a href="#">T.B.D.</a></li>      
+      </ul>
+    </nav>
+    <!--Middle wrapper.  Use this to create 3 columns between top navigation and footer-->
+    <div class="middle-wrapper">
+      <aside class="row1-col1">
+        <h4>Food Links</h4>
+        <!--side navigation to favorite foods-->
+        <nav class="side-nav">
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Stir_frying" target="_blank"><img onMouseOver="mOverSF(this)" onMouseOut="mOutSF(this)" src="images/stir-fry-icon.png" alt="stir fry"></a></li><!--pass object instance to functions to modify src attribute as needed-->
+            <li>Stir Fry</li>
+            <li><a href="https://en.wikipedia.org/wiki/St._Louis-style_pizza" target="_blank"><img onMouseOver="mOverPZ(this)" onMouseOut="mOutPZ(this)" src="images/pizza-icon.png" alt="pizza"></a></li><!--pass object instance to functions to modify src attribute as needed-->
+            <li>Pizza</li>
+            <li><a href="https://en.wikipedia.org/wiki/Hamburger" target="_blank"><img onMouseOver="mOverBG(this)" onMouseOut="mOutBG(this)" src="images/burger-icon.png" alt="Burgers"></a></li><!--pass object instance to functions to modify src attribute as needed-->
+            <li>Burgers</li>
+          </ul>
+        </nav>
+      </aside>
+      <!--middle row contains image and title-->
+      <section class="row1-col-c">
+        <h4 id="center-header">Stir Fry</h4>
+        <figure>
+          <img src="images/stirfry.jpg" alt="Stir fry">
+          <figcaption>
+            <p>Stir Fry - Chinese cooking technique</p>
+          </figcaption>
+        </figure>
+      </section>
+      <!--right column contains description-->
+      <section class="row1-col1">
+        <h4>Description</h4>
+        <p>Stir frying is a Chinese cooking technique in which ingredients are fried in a small amount of very hot oil while being stirred in a wok. The technique originated in China and in recent centuries has spread into other parts of Asia and the West.</p>
+      </section>
+    </div>
+    <!--footer, divide footer into 3 columns-->
+    <footer>
+      <article class="f-content-left">
+        <h5>&copy; Matt Caldwell - 2017 </h5> 
+      </article>
+      <article class="f-content-center">
+        <h5><em id='B'>Contact</em></h5>
+        <p>
+          555-555-5555(p)
+        </p>
+        <p>
+          742 Evergreen Terrace
+          Springfield
+        </p>
+      </article>
+      <article class="f-content-right">
+        <h5>Follow me </h5>
+        <ul class="f-icon">
+          <li><a href="http://www.facebook.com" target="_blank"><img class="f-image" src="images/facebook.png" alt="Facebook"></a></li>
+          <li><a href="http://www.linkedin.com" target="_blank"><img class="f-image" src="images/linked-in.png" alt="Linkedin"></a></li>
+          <li><a href="http://www.github.com" target="_blank"><img class="f-image" src="images/github.png" alt="Git Hub"></a></li>
+        </ul>
+      </article>
+    </footer>
+  </div>
+ 
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--Note: Home work for week 5.  Passed validator 11/14/17.
+<i class="fa fa-stethoscope"></i> fa-stethoscope is element to use
+Note to Jeremie and Kat, font awesome items used on pages movies.html and books.html.  Google fonts linked to all pages-->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mockup Assignment</title>
+<!--links to stylesheets, google fonts, and font awesome script-->
+  <script src="https://use.fontawesome.com/c6ec3aecbd.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+</head>
+<body>
+  <!--  Content wrapper. wraps all code in body-->
+  <!--NOTE:  Won't pass validator if I use section/article in lieu of div tag.  Validator says heading required with section.  That is why I am using div's instead of section -->
+  <div class="main-wrapper">
+<!--    use em to change font color, type, and make bold-->
+    <h1 class="heading">Some of my <em>favorite</em> things!</h1>
+<!--    Top menu navigation-->
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html">Food</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="#">T.B.D.</a></li>
+        <li><a href="#">T.B.D.</a></li>
+        <li><a href="#">T.B.D.</a></li>      
+      </ul>
+    </nav>
+    <!--NOTE:  Won't pass validator if I use section/article in lieu of div tag.  Validator says heading required with section.  That is why I am using div's instead of section -->
+    <!--Middle wrapper.  Use this to create 3 columns between top navigation and footer-->
+    <div class="middle-wrapper">
+      <!--Aside tag to create 1st column-->
+      <aside class="row1-col1">
+        <h4>Book Links</h4>
+        <!--side navigation to favorite books-->
+        <nav class="side-nav">
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/The_Stand" target="_blank"><i class="fa fa-book fa-4x" aria-hidden="true"></i></a></li>
+              <li>The Stand</li>
+              <li><a href="https://en.wikipedia.org/wiki/Dune_(novel)" target="_blank"><i class="fa fa-bookmark fa-4x" aria-hidden="true"></i></a></li>
+              <li>Dune</li>
+              <li><a href="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird" target="_blank"><i class="fa fa-bookmark-o fa-4x" aria-hidden="true"></i></a></li>
+              <li>To Kill a Mockingbird</li>
+          </ul>
+        </nav>
+      </aside>
+      <!--middle row contains image and title-->
+      <section class="row1-col-c">
+        <h4 id="center-header">The Stand - 1978</h4>
+        <figure>
+          <img src="images/the-stand.jpg" alt="The Stand">
+          <figcaption>
+            <p>The Stand - by Stephen King </p>
+          </figcaption>
+        </figure>
+      </section>
+      <!--right column contains description-->
+      <section class="row1-col1">
+        <h4>Description</h4>
+        <p>
+          The Stand is a post-apocalyptic horror/fantasy novel by American author Stephen King. It expands upon the scenario of his earlier short story "Night Surf" and outlines the total breakdown of society after    the accidental release of a strain of influenza that had been modified for biological warfare causes an apocalyptic pandemic which kills off the majority of the world's human population.
+        </p>
+      </section>
+    </div>
+    <!--footer, divide footer into 3 columns-->
+    <footer>
+      <article class="f-content-left">
+        <h5>&copy; Matt Caldwell - 2017 </h5> 
+      </article>
+      <article class="f-content-center">
+        <h5><em id='B'>Contact</em></h5>
+        <p>
+          555-555-5555(p)
+        </p>
+        <p>
+          742 Evergreen Terrace
+          Springfield
+        </p>
+      </article>
+      <article class="f-content-right">
+        <h5>Follow me </h5>
+        <ul class="f-icon">
+          <li><a href="http://www.facebook.com" target="_blank"><img class="f-image" src="images/facebook.png" alt="Facebook"></a></li>
+          <li><a href="http://www.linkedin.com" target="_blank"><img class="f-image" src="images/linked-in.png" alt="Linkedin"></a></li>
+          <li><a href="http://www.github.com" target="_blank"><img class="f-image" src="images/github.png" alt="Git Hub"></a></li>
+        </ul>
+      </article>
+    </footer>
+  </div>
+ 
+</body>
+
+</html>
